@@ -14,12 +14,12 @@ async function init() {
         await client.connect();
         console.log('connected to the database');
         await client.query(`
-        CREATE TABLE departments (
+        CREATE TABLE departments2 (
             id SERIAL PRIMARY KEY,
             name VARCHAR(255) NOT NULL
           );
           
-          CREATE TABLE employees (
+          CREATE TABLE employees2 (
             id SERIAL PRIMARY KEY,
             name VARCHAR(255) NOT NULL,
             created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP,
